@@ -15,7 +15,9 @@ https://just-win-lol.jellyc.tf/
 
 ## Breakdown
 Connecting to the website, we see that we are presented with a game of "Balatro", however, the UI for the game is mostly broken, except for the "Draw" and "Reset" buttons, the "Reset" button resets the score and gets us back to 10 hands remaining, while the "Draw" button draws a hand of 12 cards. The goal of the game is to get 5 of the same cards within a hand of 12 cards. Looking at the UI on the website
+
 ![just_win_lol_1](/assets/just_win_lol_1.png)
+
 It is clear that we must get 5 of a kind to score points. Using some trial and error, we see that every time this happens, we are given 1000 points, and we need to get 5000 points to win the game. The game is also limited to 10 hands, and we need to win the game 5 times within 10 attempts to get the flag.
 
 Looking at the source code of the website, we see that it is very primitive, and we see that the attack surface is minimal, and likely the vulnerability lies in the RNG, based on the challenge text. Looking at the [source code](/assets/just_win_lol.go), we observe
@@ -118,6 +120,7 @@ func main() {
 Running the script, we get the times that the cards will be drawn, and we can manually play the game 5 times to get the flag.
 
 Sure enough, after playing the game 5 times, we get the flag:
+
 ![just_win_lol_flag](/assets/just_win_lol_flag.png)
 
 ```

@@ -4,7 +4,9 @@
 A challenge that requires decoding a Canonical Huffman Encoded message. The flag is encoded using Canonical Huffman Encoding.
 ## Challenge Text
 Is this meme still relevant? 
+
 ![canon_meme](/assets/canon_meme.jpg)
+
 Note: Flag format for this challenge is all lowercase: jellyctf{lowercase_letters}
 
 Author: Sheepiroo

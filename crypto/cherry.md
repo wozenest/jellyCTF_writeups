@@ -96,6 +96,7 @@ spinCounts = [4194, 29860, 25598];
 updatePlaintextDisplay();
 ```
 Giving this image:
+
 ![cherry3](/assets/cherry_3.png)
 
 Repeating the process for the other 2 settings, we get the flag:
